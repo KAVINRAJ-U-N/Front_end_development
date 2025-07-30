@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Ticket Booking</h1>
+    
+    <label>Select Movie:</label>
+    <select id="movie">
+      <option value="200">Avengers: Endgame (₹200)</option>
+      <option value="150">Inception (₹150)</option>
+      <option value="100">Interstellar (₹100)</option>
+    </select>
+    
+    <div class="seat-container">
+      <div class="screen">SCREEN</div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>0
+      </div>
+    </div>
+
+    <p class="info">
+      Selected Seats: <span id="count">0</span><br />
+      Total Price: ₹<span id="total">0</span>
+    </p>
+
+    <button id="bookBtn">Book Tickets</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
